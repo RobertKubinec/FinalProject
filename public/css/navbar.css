@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Arial";
+    color: #222;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar {
+    padding: .8rem;
+    background-color: lightgoldenrodyellow;
+}
+
+.navbar-nav li {
+    padding-left: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em;
+}
+
+.jumbotron {
+    margin: auto;
+    background-color: grey;
+    border-radius: 0;
+    padding: 3rem;
+    color: floralwhite;
+}
+
+
+.fa-css3 {
+    color: darkblue;
+    font-size: 2em;
+    margin: 1rem;
+}
+
+.social a {
+    font-size: 4em;
+    padding: 6rem;
+}
+
+.fa-facebook {
+    color: darkslateblue;
+}
+
+.fa-instagram {
+    color: lightcoral;
+}
+
+.fa-youtube {
+    color: firebrick;
+}
+
+.fa-twitter {
+    color: deepskyblue;
+}
+
+footer {
+    background-color: grey;
+    color: floralwhite;
+    padding-top: 2rem;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+}
