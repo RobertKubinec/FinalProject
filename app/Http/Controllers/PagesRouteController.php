@@ -38,5 +38,3 @@ class PagesRouteController extends Controller
     }
 
 }
-
-//abfjsdfjsddjkkshfjsdhfjkhdsjfhajkhfjgdhjkfsadsbndf
