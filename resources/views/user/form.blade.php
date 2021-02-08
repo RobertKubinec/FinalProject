@@ -19,12 +19,14 @@
     </div>
     <div class="form-group">
         <label for="password">Heslo</label>
-        <input type="password" class="form-control" id="password" name="password"   placeholder="Zadajte heslo">
+        <input type="password" class="form-control" id="password" name="password"   placeholder="Zadajte heslo"
+        value="{{ old('password', @$model->password) }}">
         <small id="emailHelp" class="form-text text-muted">S nikým nezdieľajte svoje heslo!</small>
     </div>
     <div class="form-group">
         <label for="password">Potvrdenie hesla</label>
-        <input type="password" class="form-control" id="password" name="password_confirmation" placeholder="Potvrďte heslo">
+        <input type="password" class="form-control" id="password" name="password_confirmation" placeholder="Potvrďte heslo"
+        value="{{ old('password', @$model->password) }}">
     </div>
     <div class="form-group">
         <input type="submit" class="btn-primary form-control">
