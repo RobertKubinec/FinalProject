@@ -53,7 +53,7 @@
 {{--    toto mam zakomentovane, aby mi fungoval AJAX medzi navbarom a footerom --}}
 {{--    <script src="{{ asset('js/app.js') }}" defer></script>--}}
 
-    <!-- Fonts -->
+<!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
@@ -113,12 +113,7 @@
                     @endauth
                 </li>
             @endcan
-        </ul>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-
-            <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 @guest
                     @if (Route::has('login'))
@@ -154,7 +149,6 @@
                 @endguest
             </ul>
         </div>
-    </div>
 </nav>
 
 

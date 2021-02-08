@@ -2,40 +2,40 @@
 @section('content')
     <link href="{{ asset('css/jumbotron.css') }}" rel="stylesheet">
 
-{{--        <!-- Slider obrazkov-->--}}
-{{--            <div id="demo" class="carousel slide" data-ride="carousel">--}}
-{{--                <ul class="carousel-indicators">--}}
-{{--                    <li data-target="#demo" data-slide-to="0" class="active"></li>--}}
-{{--                    <li data-target="#demo" data-slide-to="1"></li>--}}
-{{--                    <li data-target="#demo" data-slide-to="2"></li>--}}
-{{--                    <li data-target="#demo" data-slide-to="3"></li>--}}
-{{--                    <li data-target="#demo" data-slide-to="4"></li>--}}
-{{--                </ul>--}}
-{{--                <div class="carousel-inner">--}}
-{{--                    <div class="carousel-item active">--}}
-{{--                        <img src="../../public/images/Zima.png" alt="Zima">--}}
-{{--                    </div>--}}
-{{--                    <div class="carousel-item">--}}
-{{--                        <img src="../../public/images/OravskyHrad.png" alt="Oravský hrad">--}}
-{{--                    </div>--}}
-{{--                    <div class="carousel-item">--}}
-{{--                        <img src="../../public/images/Noc.png" alt="Noc">--}}
-{{--                    </div>--}}
-{{--                    <div class="carousel-item">--}}
-{{--                        <img src="../../public/images/Jaskyna.png" alt="Jaskyňa">--}}
-{{--                    </div>--}}
-{{--                    <div class="carousel-item">--}}
-{{--                        <img src="../../public/images/VysokeTatry.png" alt="Vysoké Tatry">--}}
-{{--                    </div>--}}
+    <!-- Slider obrazkov-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{asset('images/Zima.png')}}" alt="Zima">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('images/OravskyHrad.png')}}" alt="Oravský hrad">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('images/Noc.png')}}" alt="Noc">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('images/Jaskyna.png')}}" alt="Jaskyňa">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('images/VysokeTatry.png')}}" alt="Vysoké Tatry">
+            </div>
 
-{{--                </div>--}}
-{{--                <a class="carousel-control-prev" href="#demo" data-slide="prev">--}}
-{{--                    <span class="carousel-control-prev-icon"></span>--}}
-{{--                </a>--}}
-{{--                <a class="carousel-control-next" href="#demo" data-slide="next">--}}
-{{--                    <span class="carousel-control-next-icon"></span>--}}
-{{--                </a>--}}
-{{--            </div>--}}
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
