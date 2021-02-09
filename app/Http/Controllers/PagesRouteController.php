@@ -29,7 +29,7 @@ class PagesRouteController extends Controller
 
     public function caves()
     {
-        return view('pages/caves');
+        return view('caves/caves');
     }
 
     public function articles()

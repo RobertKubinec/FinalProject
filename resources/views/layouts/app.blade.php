@@ -80,6 +80,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{route('touristMapSlovakia')}}">Turistická mapa SR</a>
             </li>
+
             <!-- Dropdown -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -88,7 +89,7 @@
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Hrady a zámky</a>
                     <a class="dropdown-item" href="#">Historické pamiatky</a>
-                    <a class="dropdown-item" href="{{route('caves')}}">Jaskyne</a>
+                    <a class="dropdown-item" href="{{route('caves.index')}}">Jaskyne</a>
                     <a class="dropdown-item" href="{{route('sightseeings')}}">Rozhľadne</a>
                     <a class="dropdown-item" href="#">Kúpele</a>
                     <a class="dropdown-item" href="#">Skanzeny</a>
@@ -114,41 +115,44 @@
                 </li>
             @endcan
 
-                <!-- Authentication Links -->
-                @guest
-                    @if (Route::has('login'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Prihlásenie') }}</a>
-                        </li>
-                    @endif
 
-                    @if (Route::has('register'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Registrácia') }}</a>
-                        </li>
-                    @endif
-                @else
-                    <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{ Auth::user()->name }}
+
+
+        <!-- Authentication Links -->
+            @guest
+                @if (Route::has('login'))
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" href="{{ route('login') }}">{{ __('Prihlásenie') }}</a>
+                    </li>
+                @endif
+
+                @if (Route::has('register'))
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('register') }}">{{ __('Registrácia') }}</a>
+                    </li>
+                @endif
+            @else
+                <li class="nav-item dropdown ml-5">
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ Auth::user()->name }}
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            {{ __('Odhlásiť') }}
                         </a>
 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                {{ __('Odhlásiť') }}
-                            </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
-                        </div>
-                    </li>
-                @endguest
-            </ul>
-        </div>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </div>
+                </li>
+            @endguest
+        </ul>
+    </div>
 </nav>
 
 

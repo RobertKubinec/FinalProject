@@ -23,12 +23,12 @@ Route::get('/welcome', [App\Http\Controllers\PagesRouteController::class, 'welco
 Route::get('/factsAboutSlovakia', [App\Http\Controllers\PagesRouteController::class, 'facts'])->name('factsAboutSlovakia');
 Route::get('/touristMapSlovakia', [App\Http\Controllers\PagesRouteController::class, 'map'])->name('touristMapSlovakia');
 Route::get('/sightseeings', [App\Http\Controllers\PagesRouteController::class, 'sights'])->name('sightseeings');
-Route::get('/caves', [App\Http\Controllers\PagesRouteController::class, 'caves'])->name('caves');
+Route::resource('caves', \App\Http\Controllers\CaveController::class);
+Route::get('caves/{caves}/delete', [\App\Http\Controllers\CaveController::class, 'destroy'])->name('caves.delete');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 
 
 //do vnutra ma pusti len vtedy, ak je konkretny clovek prihlaseny
@@ -37,7 +37,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('user', \App\Http\Controllers\UserController::class);
     Route::get('user/{user}/delete', [\App\Http\Controllers\UserController::class, 'destroy'])->name('user.delete');
 });
-
 
 
 Route::resource('articles', \App\Http\Controllers\ArticlesController::class);
