@@ -90,7 +90,7 @@
                     <a class="dropdown-item" href="#">Hrady a zámky</a>
                     <a class="dropdown-item" href="#">Historické pamiatky</a>
                     <a class="dropdown-item" href="{{route('caves.index')}}">Jaskyne</a>
-                    <a class="dropdown-item" href="{{route('sightseeings')}}">Rozhľadne</a>
+                    <a class="dropdown-item" href="{{route('sightseeings.index')}}">Rozhľadne</a>
                     <a class="dropdown-item" href="#">Kúpele</a>
                     <a class="dropdown-item" href="#">Skanzeny</a>
                     <a class="dropdown-item" href="#">Náboženské pamiatky</a>

@@ -3,7 +3,6 @@
         {{ $error }}<br>
     @endforeach
 </div>
-
 <form method="post" action="{{$action}}">
     @csrf
     @method($method)

@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Aginev\Datagrid\Datagrid;
-use App\Models\Caves;
+use App\Models\Sightseeings;
 use Illuminate\Http\Request;
 
-class CaveController extends Controller
+class SightseeingController extends Controller
 {
 
 
@@ -17,21 +17,11 @@ class CaveController extends Controller
      */
     public function index(Request $request)
     {
-        $caves = Caves::paginate(25);
-//        $grid = new Datagrid($caves, $request->get('f', []));
-//        $grid->setColumn('title', 'Nadpis')
-//            ->setColumn('article', 'Text')
-//            ->setColumn('imageLink', 'Obrázok')
-//            ->setActionColumn([
-//                'wrapper' => function ($value, $row) {
-//                    return '<a href="' . route('user.edit', [$row->id]) . '" title="Edit" class="btn btn-sm btn-primary">Uprav</a>
-//                        <a href="' . route('user.delete', $row->id) . '" title="Delete" data-method="DELETE" class="btn btn-sm btn-danger" data-confirm="Are you sure?">Zmaž</a>';
-//                }
-//            ]);
+        $sightseeings = Sightseeings::paginate(25);
 
 
-        return view('caves.index', [
-            'caves' => $caves
+        return view('sightseeings.index', [
+            'sightseeings' => $sightseeings
         ]);
     }
 
@@ -42,7 +32,7 @@ class CaveController extends Controller
      */
     public function create()
     {
-        return view('caves.create', ['action' => route('caves.store'),
+        return view('sightseeings.create', ['action' => route('sightseeings.store'),
             'method' => 'post'
         ]);
     }
@@ -61,9 +51,10 @@ class CaveController extends Controller
             'imageLink' => 'required'
         ]);
 
-        $caves = Caves::create($request->all());
-        $caves->save();
-        return redirect()->route('caves.index');
+
+        $sightseeings = Sightseeings::create($request->all());
+        $sightseeings->save();
+        return redirect()->route('sightseeings.index');
     }
 
     /**
@@ -83,13 +74,13 @@ class CaveController extends Controller
      * @param int $id
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function edit(Caves $caves)
+    public function edit(Sightseeings $sightseeings)
     {
 
-        return view('caves.edit', [
-            'action' => route('caves.update', $caves->id),
+        return view('sightseeings.edit', [
+            'action' => route('sightseeings.update', $sightseeings->id),
             'method' => 'put',
-            'model' => $caves
+            'model' => $sightseeings
         ]);
     }
 
@@ -100,7 +91,7 @@ class CaveController extends Controller
      * @param int $id
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, Caves $caves)
+    public function update(Request $request, Sightseeings $sightseeings)
     {
         $request->validate([
             'title' => 'required',
@@ -109,8 +100,8 @@ class CaveController extends Controller
         ]);
 
 
-        $caves->update($request->all());
-        return redirect()->route('caves.index');
+        $sightseeings->update($request->all());
+        return redirect()->route('sightseeings.index');
     }
 
     /**
@@ -119,9 +110,9 @@ class CaveController extends Controller
      * @param int $id
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy(Caves $caves)
+    public function destroy(Sightseeings $sightseeings)
     {
-        $caves->delete();
-        return redirect()->route('caves.index');
+        $sightseeings->delete();
+        return redirect()->route('sightseeings.index');
     }
 }

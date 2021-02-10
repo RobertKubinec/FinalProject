@@ -22,15 +22,15 @@ class PagesRouteController extends Controller
         return view('pages/touristMapSlovakia');
     }
 
-    public function sights()
-    {
-        return view('pages/sightseeings');
-    }
-
-    public function caves()
-    {
-        return view('caves/caves');
-    }
+//    public function sights()
+//    {
+//        return view('pages/sightseeings');
+//    }
+//
+//    public function caves()
+//    {
+//        return view('caves/caves');
+//    }
 
     public function articles()
     {
