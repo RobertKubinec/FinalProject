@@ -74,9 +74,9 @@ class SightseeingController extends Controller
      * @param int $id
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
-    public function edit(Sightseeings $sightseeings)
+    public function edit($id)
     {
-
+        $sightseeings = Sightseeings::find($id);
         return view('sightseeings.edit', [
             'action' => route('sightseeings.update', $sightseeings->id),
             'method' => 'put',
@@ -91,7 +91,7 @@ class SightseeingController extends Controller
      * @param int $id
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, Sightseeings $sightseeings)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'title' => 'required',
@@ -99,7 +99,7 @@ class SightseeingController extends Controller
             'imageLink' => 'required'
         ]);
 
-
+        $sightseeings = Sightseeings::find($id);
         $sightseeings->update($request->all());
         return redirect()->route('sightseeings.index');
     }

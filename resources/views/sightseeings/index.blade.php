@@ -32,7 +32,8 @@
                         <div class="mb-3">
                             <a href="{{route('sightseeings.edit', [$sightseeing->id])}}" title="Edit"
                                class="btn btn-sm btn-primary">Uprav</a>
-                            <a href="{{route('caves.delete', [$sightseeing->id])}}" title="Delete" data-method="DELETE"
+                            <a href="{{route('sightseeings.delete', [$sightseeing->id])}}" title="Delete"
+                               data-method="DELETE"
                                class="btn btn-sm btn-danger" data-confirm="Are you sure?">Zmaž</a>
                         </div>
                     @endauth

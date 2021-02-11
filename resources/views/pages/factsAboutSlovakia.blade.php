@@ -37,26 +37,32 @@
                 <p><b>Čas:</b> stredoeurópsky čas (+1 h od GMT)
                     (letný čas je od marca do novembra +2 h od GMT)</p>
 
-                <p><b>Nadmorská výška:</b> najvyšší bod – Gerlachovský štít (2655 m n.m.), najnižší bod – rieka Bodrog pri
+                <p><b>Nadmorská výška:</b> najvyšší bod – Gerlachovský štít (2655 m n.m.), najnižší bod – rieka Bodrog
+                    pri
                     obci Streda nad Bodrogom (94 m n.m.).</p>
 
-                <p><b>Podnebie:</b> Mierne klimatické pásmo, striedajú sa štyri ročné obdobia, priemerná teplota v zime -2
+                <p><b>Podnebie:</b> Mierne klimatické pásmo, striedajú sa štyri ročné obdobia, priemerná teplota v zime
+                    -2
                     °C (najchladnejší mesiac: január, najchladnejšia oblasť: Vysoké Tatry), v lete 21 °C (najteplejšie
                     mesiace: júl a august, najteplejšia oblasť: Podunajská nížina). V niektorých pohoriach sa drží sneh
                     priemerne 130 dní v roku.</p>
 
-                <p><b>Hranice so susednými štátmi:</b> Maďarsko (654,8 km), Poľsko (541,1 km), Česká republika (251,8 km),
+                <p><b>Hranice so susednými štátmi:</b> Maďarsko (654,8 km), Poľsko (541,1 km), Česká republika (251,8
+                    km),
                     Rakúsko (106,7 km), Ukrajina (97,8 km)</p>
 
-                <p><b>Územnosprávne členenie:</b> 8 samosprávnych krajov (Bratislavský, Trnavský, Trenčiansky, Nitriansky,
+                <p><b>Územnosprávne členenie:</b> 8 samosprávnych krajov (Bratislavský, Trnavský, Trenčiansky,
+                    Nitriansky,
                     Žilinský, Banskobystrický, Prešovský, Košický), 79 okresov, 138 miest, 2891 obcí (vrátane miest)</p>
 
                 <p><b>Hlavné mesto:</b> Bratislava (465 327 obyvateľov k 1. 6. 2012)</p>
                 <p><b>Počet obyvateľov:</b> 5 412 008 (k 30. 6. 2013)</p>
                 <p><b>Hustota zaľudnenia:</b> 110/km2</p>
                 <p><b>Štátny jazyk:</b> slovenský (naučte slovenčinu svojich známych v zahraničí!</p>
-                <p><b>Národnostné zloženie obyvateľstva:</b> národnosť slovenská (80,7 %), maďarská (8,5 %), rómska (2 %),
-                    česká (0,6 %), rusínska (0,6 %), ukrajinská (0,1 %), nemecká (0,1 %), poľská (0,1 %) a iné (7,3 %)</p>
+                <p><b>Národnostné zloženie obyvateľstva:</b> národnosť slovenská (80,7 %), maďarská (8,5 %), rómska (2
+                    %),
+                    česká (0,6 %), rusínska (0,6 %), ukrajinská (0,1 %), nemecká (0,1 %), poľská (0,1 %) a iné (7,3 %)
+                </p>
             </div>
         </div>
         <div class="row">
@@ -64,7 +70,8 @@
                 <p>
                     <b>Náboženstvo:</b>
                     – veriaci približne 86,6 %, z toho:<br>
-                    rímskokatolíci (62 %),<br> evanjelici (5,9 %),<br> gréckokatolíci (3,8 %),<br> reformovaní kresťania (1,8 %),<br>
+                    rímskokatolíci (62 %),<br> evanjelici (5,9 %),<br> gréckokatolíci (3,8 %),<br> reformovaní kresťania
+                    (1,8 %),<br>
                     pravoslávni (0,9 %)<br>
                     – iné 1,6 %, nezistené 10,6 %<br>
                     – bez vyznania približne 13,4 %

@@ -28,7 +28,7 @@ class UserController extends Controller
             ->setActionColumn([
                 'wrapper' => function ($value, $row) {
                     return '<a href="' . route('user.edit', [$row->id]) . '" title="Edit" class="btn btn-sm btn-primary">Uprav</a>
-                        <a href="' . route('user.delete', $row->id) . '" title="Delete" data-method="DELETE" class="btn btn-sm btn-danger" data-confirm="Are you sure?">Zmaž</a>';
+                        <a href="' . route('user.delete', [$row->id]) . '" title="Delete" data-method="DELETE" class="btn btn-sm btn-danger" data-confirm="Are you sure?">Zmaž</a>';
                 }
             ]);
 
@@ -111,9 +111,9 @@ class UserController extends Controller
             'password' => 'required|min:8|confirmed'
         ]);
 
-
         $user->update($request->all());
         return redirect()->route('user.index');
+
     }
 
     /**

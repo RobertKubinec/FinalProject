@@ -12,11 +12,12 @@
                             </div>
                         @endif
                         @can('create', \App\Models\User::class)
-                        <div class="mb-3">
-                            <a href="{{route('user.create')}}" class="btn btn-sm btn-success" role="button">Pridaj nového používateľa
+                            <div class="mb-3">
+                                <a href="{{route('user.create')}}" class="btn btn-sm btn-success" role="button">Pridaj
+                                    nového používateľa
                                 </a>
-                        </div>
-                            @endcan
+                            </div>
+                        @endcan
                         {!! $grid->show() !!}
                     </div>
                 </div>

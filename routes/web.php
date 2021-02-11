@@ -22,14 +22,8 @@ Route::get('/', function () {
 Route::get('/welcome', [App\Http\Controllers\PagesRouteController::class, 'welcome'])->name('welcome');
 Route::get('/factsAboutSlovakia', [App\Http\Controllers\PagesRouteController::class, 'facts'])->name('factsAboutSlovakia');
 Route::get('/touristMapSlovakia', [App\Http\Controllers\PagesRouteController::class, 'map'])->name('touristMapSlovakia');
-//Route::get('/sightseeings', [App\Http\Controllers\PagesRouteController::class, 'sights'])->name('sightseeings');
-Route::resource('caves', \App\Http\Controllers\CaveController::class);
-Route::get('caves/{caves}/delete', [\App\Http\Controllers\CaveController::class, 'destroy'])->name('caves.delete');
-Route::resource('sightseeings', \App\Http\Controllers\SightseeingController::class);
-Route::get('sightseeings/{sightseeings}/delete', [\App\Http\Controllers\SightseeingController::class, 'destroy'])->name('sightseeings.delete');
 
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
@@ -40,6 +34,11 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('user/{user}/delete', [\App\Http\Controllers\UserController::class, 'destroy'])->name('user.delete');
 });
 
+Route::resource('caves', \App\Http\Controllers\CaveController::class);
+Route::get('caves/{caves}/delete', [\App\Http\Controllers\CaveController::class, 'destroy'])->name('caves.delete');
+
+Route::resource('sightseeings', \App\Http\Controllers\SightseeingController::class);
+Route::get('sightseeings/{sightseeings}/delete', [\App\Http\Controllers\SightseeingController::class, 'destroy'])->name('sightseeings.delete');
 
 Route::resource('articles', \App\Http\Controllers\ArticlesController::class);
 Route::get('/article', [App\Http\Controllers\PagesRouteController::class, 'articles'])->name('article');

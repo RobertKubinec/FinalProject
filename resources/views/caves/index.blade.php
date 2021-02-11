@@ -31,9 +31,9 @@
                     @auth
                         <div class="mb-3">
                             <a href="{{route('caves.edit', [$cave->id])}}" title="Edit"
-                               class="btn btn-sm btn-primary">Uprav</a>
+                               class="btn btn-sm btn-primary" role="button">Uprav</a>
                             <a href="{{route('caves.delete', [$cave->id])}}" title="Delete" data-method="DELETE"
-                               class="btn btn-sm btn-danger" data-confirm="Are you sure?">Zmaž</a>
+                               class="btn btn-sm btn-danger" role="button" data-confirm="Are you sure?">Zmaž</a>
                         </div>
                     @endauth
                 @endcan

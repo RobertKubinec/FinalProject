@@ -98,12 +98,6 @@
                     <a class="dropdown-item" href="#">Náboženské pamiatky</a>
                 </div>
             </li>
-            {{--            <li class="nav-item">--}}
-            {{--                <a class="nav-link" href="formular.php">Fórum</a>--}}
-            {{--            </li>--}}
-            {{--            <li class="nav-item">--}}
-            {{--                <a class="nav-link" href="zoznam.php">Obsah fóra</a>--}}
-            {{--            </li>--}}
             <li class="nav-item">
                 <a class="nav-link" href="{{route('article')}}">Príspevky</a>
             </li>
@@ -117,7 +111,6 @@
 
 
 
-
         <!-- Authentication Links -->
             @guest
                 @if (Route::has('login'))
@@ -127,7 +120,7 @@
                 @endif
 
                 @if (Route::has('register'))
-                    <li class="nav-item">
+                    <li class="nav-item ml-5">
                         <a class="nav-link" href="{{ route('register') }}">{{ __('Registrácia') }}</a>
                     </li>
                 @endif

@@ -45,8 +45,7 @@
                 Európy...</h5>
         </div>
     </div>
-
-
+    
     <!-- Kratky popis stranky-->
     <div class="container">
         <div class="row">
@@ -104,7 +103,6 @@
                 </p>
 
                 <hr class="my-4">
-
 
                 <!-- Dvojstlpcove sekcie -->
                 <div class="container-fluid">
@@ -173,7 +171,6 @@
 
     <hr class="my-4">
 
-
     <!-- Trojstlpcova sekcia -->
     <div class="container-fluid padding">
         <div class="row text-center padding">
@@ -196,7 +193,6 @@
     </div>
 
     <hr class="my-4">
-
 
     <!-- Dvojstlpcova sekcia -->
     <div class="container">
@@ -223,7 +219,6 @@
                     Že som sa tu narodila ,že žiť tu smiem.
                     Na Slovensko vždy hrdá budem,
                     Že je to kraj krásny nikdy nezabudnem.</p>
-
             </div>
             <div class="col-lg-6">
                 <img src="{{ asset('images/Slovensko.png') }}" class="img-fluid" alt="Slovensko">
@@ -231,10 +226,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 
     <!--- Connect -->
     <div class="container-fluid padding">
