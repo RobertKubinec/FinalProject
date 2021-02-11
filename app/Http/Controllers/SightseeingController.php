@@ -46,8 +46,8 @@ class SightseeingController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required',
-            'article' => 'required',
+            'title' => 'required', 'min:3', 'max:50',
+            'article' => 'required', 'min:3', 'max:50',
             'imageLink' => 'required'
         ]);
 
@@ -94,8 +94,8 @@ class SightseeingController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'title' => 'required',
-            'article' => 'required',
+            'title' => 'required', 'min:3', 'max:50',
+            'article' => 'required', 'min:3', 'max:50',
             'imageLink' => 'required'
         ]);
 
@@ -113,6 +113,6 @@ class SightseeingController extends Controller
     public function destroy(Sightseeings $sightseeings)
     {
         $sightseeings->delete();
-        return redirect()->route('sightseeings.index');
+        return redirect()->route('sightseeings.index')->with('success', 'Zmazaznie prebehlo úspešne');
     }
 }

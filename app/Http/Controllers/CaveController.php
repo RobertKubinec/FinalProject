@@ -44,8 +44,8 @@ class CaveController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required',
-            'article' => 'required',
+            'title' => 'required', 'min:3', 'max:50',
+            'article' => 'required', 'min:3', 'max:50',
             'imageLink' => 'required'
         ]);
 
@@ -92,8 +92,8 @@ class CaveController extends Controller
     {
 
         $request->validate([
-            'title' => 'required',
-            'article' => 'required',
+            'title' => 'required', 'min:3', 'max:50',
+            'article' => 'required', 'min:3', 'max:50',
             'imageLink' => 'required'
         ]);
 
@@ -112,6 +112,6 @@ class CaveController extends Controller
     public function destroy(Caves $caves)
     {
         $caves->delete();
-        return redirect()->route('caves.index');
+        return redirect()->route('caves.index')->with('success', 'Zmazaznie prebehlo úspešne');
     }
 }

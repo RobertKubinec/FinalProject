@@ -45,7 +45,7 @@
                 Európy...</h5>
         </div>
     </div>
-    
+
     <!-- Kratky popis stranky-->
     <div class="container">
         <div class="row">
