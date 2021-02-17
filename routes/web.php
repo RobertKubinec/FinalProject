@@ -40,5 +40,11 @@ Route::get('caves/{caves}/delete', [\App\Http\Controllers\CaveController::class,
 Route::resource('sightseeings', \App\Http\Controllers\SightseeingController::class);
 Route::get('sightseeings/{sightseeings}/delete', [\App\Http\Controllers\SightseeingController::class, 'destroy'])->name('sightseeings.delete');
 
+Route::resource('castles', \App\Http\Controllers\CastleController::class);
+Route::get('castles/{castles}/delete', [\App\Http\Controllers\CastleController::class, 'destroy'])->name('castles.delete');
+
+Route::resource('nationalParks', \App\Http\Controllers\CastleController::class);
+Route::get('nationalParks/{nationalParks}/delete', [\App\Http\Controllers\CastleController::class, 'destroy'])->name('nationalParks.delete');
+
 Route::resource('articles', \App\Http\Controllers\ArticlesController::class);
 Route::get('/article', [App\Http\Controllers\PagesRouteController::class, 'articles'])->name('article');

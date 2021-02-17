@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Final App</title>
+    <title>Zaži Slovensko</title>
 
     <meta charset="utf-8">
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+{{--    <link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -36,8 +36,8 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'FinalProject') }}</title>
-    <!-- Fonts -->
+{{--    <title>{{ config('app.name', 'FinalProject') }}</title>--}}
+<!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
@@ -75,14 +75,14 @@
                     Kam na VÝLET
                 </a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Hrady a zámky</a>
+                    <a class="dropdown-item" href="">Hrady a zámky</a>
                     <a class="dropdown-item" href="#">Historické pamiatky</a>
                     <a class="dropdown-item" href="{{route('caves.index')}}">Jaskyne</a>
                     <a class="dropdown-item" href="{{route('sightseeings.index')}}">Rozhľadne</a>
                     <a class="dropdown-item" href="#">Kúpele</a>
                     <a class="dropdown-item" href="#">Skanzeny</a>
                     <a class="dropdown-item" href="#">Náboženské pamiatky</a>
-                    <a class="dropdown-item" href="#">Národné parky</a>
+                    <a class="dropdown-item" href="">Národné parky</a>
                     <a class="dropdown-item" href="#">Náboženské pamiatky</a>
                 </div>
             </li>
@@ -151,7 +151,7 @@
             <div class="col-md-6">
                 <hr class="light">
                 <p><b>Tel.č.</b> 0910243658</p>
-                <p><b>Email:</b> zazislovensko@zazislovensko.sk</p>
+                <p><b>Email:</b> zazislovensko@gmail.sk</p>
                 <p><b>Web stránka:</b> www.zazislovensko.sk</p>
             </div>
             <div class="col-md-6">
